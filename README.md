@@ -49,3 +49,8 @@ GET http://localhost:3000/nearest-station
     }
 }
 ```
+
+## Preview
+
+https://user-images.githubusercontent.com/58369263/189316760-d04f0964-282f-46c8-bcb3-5fa9c1f1696a.mov
+
