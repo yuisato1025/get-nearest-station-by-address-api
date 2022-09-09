@@ -19,13 +19,13 @@ GET http://localhost:3000/nearest-station
 **input**
 
 ```bash
-address: string
+"http://localhost:3000/nearest-station?address=string"
 ```
 
 例)
 
 ```bash
-address: "東京都港区芝公園４丁目２−８"
+"http://localhost:3000/nearest-station?address=東京都港区芝公園４丁目２−８"
 ```
 
 **output**
