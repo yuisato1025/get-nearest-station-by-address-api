@@ -19,6 +19,7 @@ class SearchController < ApplicationController
         geocorderUrl = GEOCORDER_API_BASE_URL + encodedQuery
         uri = URI.parse(geocorderUrl)
 
+        # TODO: リクエスト共通化
         http = Net::HTTP.new(uri.host, uri.port)
         request = Net::HTTP::Get.new(uri.request_uri)
         http.use_ssl = true
@@ -32,8 +33,9 @@ class SearchController < ApplicationController
         expressUrl = EXPRESS_API_BASE_URL + encodedQuery
         uri = URI.parse(expressUrl)
 
+        # TODO: リクエスト共通化
         http = Net::HTTP.new(uri.host, uri.port)
-        request = Net::HTTP::Get.new(uri.request_uri, {'Content-Type' => 'application/json'})
+        request = Net::HTTP::Get.new(uri.request_uri)
         response = http.request(request)
     
         return JSON.parse(response.body)["response"]["station"][0]["name"]
