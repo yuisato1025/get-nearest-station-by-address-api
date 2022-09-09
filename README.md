@@ -12,7 +12,9 @@ $ rails s
 
 **URL**
 
-POST　[TBD]
+```bash
+GET http://localhost:3000/nearest-station
+``` 
 
 **input**
 
@@ -29,11 +31,21 @@ address: "東京都港区芝公園４丁目２−８"
 **output**
 
 ```bash
-station: string
+{
+    "status": "SUCCESS",
+    "data": {
+        "station": string
+    }
+}
 ```
 
 例)
 
 ```bash
-station: "赤羽橋駅"
+{
+    "status": "SUCCESS",
+    "data": {
+        "station": "赤羽橋駅"
+    }
+}
 ```
