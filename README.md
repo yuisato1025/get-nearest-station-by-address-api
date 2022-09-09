@@ -1,24 +1,39 @@
-# README
+# 最寄駅検索API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 使用方法
 
-Things you may want to cover:
+### 1. サーバー立ち上げ
 
-* Ruby version
+```bash
+$ rails s
+```
 
-* System dependencies
+### 2. APIリクエストを送る
 
-* Configuration
+**URL**
 
-* Database creation
+POST　[TBD]
 
-* Database initialization
+**input**
 
-* How to run the test suite
+```bash
+address: string
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+例)
 
-* Deployment instructions
+```bash
+address: "東京都港区芝公園４丁目２−８"
+```
 
-* ...
+**output**
+
+```bash
+station: string
+```
+
+例)
+
+```bash
+station: "赤羽橋駅"
+```
