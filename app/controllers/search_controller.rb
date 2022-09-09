@@ -10,7 +10,7 @@ class SearchController < ApplicationController
         lng, lat = getCoordinateFromAddress(address)
         station = getStationFromCoordinate(lng, lat)
 
-        render json: { status: 'SUCCESS', data: { stations: station } }
+        render json: { status: 'SUCCESS', data: { station: station } }
     end
 
     # 住所から経度緯度を取得する
