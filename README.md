@@ -34,7 +34,8 @@ GET http://localhost:3000/nearest-station
 {
     "status": "SUCCESS",
     "data": {
-        "station": string
+        "station": string,
+        "minutes": number
     }
 }
 ```
@@ -45,7 +46,8 @@ GET http://localhost:3000/nearest-station
 {
     "status": "SUCCESS",
     "data": {
-        "station": "赤羽橋駅"
+        "station": "赤羽橋駅",
+        "minutes": 6
     }
 }
 ```
