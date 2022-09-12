@@ -54,5 +54,6 @@ GET http://localhost:3000/nearest-station
 
 ## Preview
 
-https://user-images.githubusercontent.com/58369263/189316760-d04f0964-282f-46c8-bcb3-5fa9c1f1696a.mov
+https://user-images.githubusercontent.com/58369263/189564328-b8c4ab89-fc73-4fe1-b5fb-27075ab4997c.mov
+
 
